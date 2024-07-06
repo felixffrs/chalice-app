@@ -1,0 +1,34 @@
+{
+  "resources": [
+    {
+      "name": "api_handler_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::160845879626:role/chalice-app-dev-api_handler",
+      "role_name": "chalice-app-dev-api_handler"
+    },
+    {
+      "name": "api_handler",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:160845879626:function:chalice-app-dev"
+    },
+    {
+      "name": "custom_authorizer_role",
+      "resource_type": "iam_role",
+      "role_arn": "arn:aws:iam::160845879626:role/chalice-app-dev-custom_authorizer",
+      "role_name": "chalice-app-dev-custom_authorizer"
+    },
+    {
+      "name": "custom_authorizer",
+      "resource_type": "lambda_function",
+      "lambda_arn": "arn:aws:lambda:us-east-1:160845879626:function:chalice-app-dev-custom_authorizer"
+    },
+    {
+      "name": "rest_api",
+      "resource_type": "rest_api",
+      "rest_api_id": "xx2l7w85d6",
+      "rest_api_url": "https://xx2l7w85d6.execute-api.us-east-1.amazonaws.com/api/"
+    }
+  ],
+  "schema_version": "2.0",
+  "backend": "api"
+}
